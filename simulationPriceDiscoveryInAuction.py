@@ -60,7 +60,7 @@ for z in range(totalRounds):
     totalPriceCount += 1 # in the end will be just totalRounds
 
     if volumeBUY > 0 and volumeSELL > 0: # just to check that we not divide by zero
-        dxprice = (xsumSELL/volumeSELL - xsumBUY/volumeBUY) / 2.0 # deltaPrice (see the beginning of file)
+        dxprice = (xsumBUY/volumeBUY - xsumSELL/volumeSELL) / 2.0 # deltaPrice (see the beginning of file)
         xprice = xsumSELL/volumeSELL + dxprice #calculate of initial price (see AuctionPrice at introduction on beginning of file)
     else:
         xprice = 0
