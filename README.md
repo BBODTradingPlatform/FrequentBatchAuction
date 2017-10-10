@@ -23,3 +23,5 @@ also
 if AuctionPrice was not changed then break loop
 
 repeat up to 100 times
+
+see file https://github.com/BBODTradingPlatform/FrequentBatchAuction/blob/master/simulationPriceDiscoveryInAuction.py
