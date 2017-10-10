@@ -113,7 +113,7 @@ for z in range(totalRounds):
 
   #  print("Final auction price: %f with volumeBUY = %f and volumeSell = %f" % (xpricecurrent, volumeBUY, volumeSELL))
 print(finalAuctionpriceList) # list of all final stable prices in Auction
-print("Stable Price = %f [%%], Stable Volume = %f [%%]" % (stablePriceCount/totalPriceCount * 100, stableVolumeCount/totalVolumeCount * 100))
+print("Stable Price = %f [%%], Stable Volume = %f [%%]" % (stablePriceCount/totalPriceCount * 100, stableVolumeCount/totalVolumeCount * 2 * 100))
 print("Average Price = %f, SD of price = %f" % (np.mean(finalAuctionpriceList), np.std(finalAuctionpriceList)))  
 print("Average no of takers = %f [%%], SD of no of takers = %f [%%]" % (np.mean(finalnoPartiesList), np.std(finalnoPartiesList)))
 print("Average no of clients = %f, SD of no of clients = %f" % (np.mean(totalnoPartiesList), np.std(totalnoPartiesList)))
