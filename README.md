@@ -19,4 +19,4 @@ also
 
 if AuctionPrice was not changed then break loop
 
-repeat up tp 100 times
+repeat up to 100 times
