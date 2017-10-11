@@ -6,10 +6,8 @@ The Method of price discover is based on self-consistent method
 
 The initial price is calculated as:
 
-  deltaPrice = 0.5 * (Weighted buy price - Weighted sell price)
+  AuctionPrice = 0.5 * (Weighted buy price + Weighted sell price)
   
-  AuctionPrice = Weighted sell price + deltaPrice
-
 Next the self-consistent method started in loop:
 
   if buyersPrice > AuctionPrice then we count such a client price in next steps
