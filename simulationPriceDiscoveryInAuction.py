@@ -64,7 +64,7 @@ for z in range(totalRounds):
         #we take into account both sides, so we have to divide by factor of 2
         totalVolume += np.sum(priceVolume[side]["volume"])/2.0
     
-    # we initaite inital value of auctionPrice for the porpose if in the loop auctionPrice is changing
+    # we initiate value of auctionPrice for the porpose if in the loop auctionPrice is changing
     previousAuctionPrice = 0
 
     #we calculate initAuctionPrice and volume taken place in this auction
@@ -113,7 +113,7 @@ for z in range(totalRounds):
 
     # if AuctionPrice is above zero (so we found stable price). 
     # Also we check if the loop finished before reaching 100, means we truely find stable price. 
-    # if q == 100, means the price is unstable or perdiodicaly changed.
+    # if no == 100, means the price is unstable or perdiodicaly changed.
     if currentAuctionPrice > 0 and no < 100:
         stablePriceCount += 1
         auctionVolume += currentAuctionVolume
